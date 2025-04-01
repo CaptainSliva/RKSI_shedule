@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cl_settings"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".activities.Settings">
+
+    <View
+        android:id="@+id/v_head"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/head"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/b_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:background="@null"
+        android:src="@drawable/baseline_arrow_back_48"
+        app:layout_constraintBottom_toBottomOf="@+id/v_head"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:id="@+id/tv_settings_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/settings"
+        android:textColor="@color/whiteno"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/v_head"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="50dp"
+        android:layout_marginHorizontal="12dp">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/tv_initial_entity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="36dp"
+                android:text="@string/initial_entity"
+                android:textColor="@color/whiteno"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+            </TextView>
+
+            <com.example.rksishedule.utils.MySpinner
+                android:id="@+id/s_groups"
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:backgroundTint="@color/whiteno"
+                android:popupBackground="@color/transparent_white_85"
+                android:textColor="@color/whiteno"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_initial_entity">
+
+            </com.example.rksishedule.utils.MySpinner>
+
+            <com.example.rksishedule.utils.MySpinner
+                android:id="@+id/s_teachers"
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="32dp"
+                android:backgroundTint="@color/whiteno"
+                android:dropDownWidth="175dp"
+                android:popupBackground="@color/transparent_white_85"
+                android:textColor="@color/whiteno"
+                app:layout_constraintStart_toEndOf="@+id/s_groups"
+                app:layout_constraintTop_toBottomOf="@+id/tv_initial_entity">
+
+            </com.example.rksishedule.utils.MySpinner>
+
+            <TextView
+                android:id="@+id/tv_update_entities"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:text="@string/update_entties_base"
+                android:textColor="@color/whiteno"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/s_groups" />
+
+            <ImageButton
+                android:id="@+id/b_update_entities"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                app:layout_constraintBottom_toBottomOf="@+id/tv_update_entities"
+                app:layout_constraintStart_toEndOf="@+id/tv_update_entities"
+                app:layout_constraintTop_toTopOf="@+id/tv_update_entities"
+                app:srcCompat="@drawable/baseline_refresh_24"
+                app:tint="@color/edit" />
+
+            <TextView
+                android:id="@+id/tv_del_shedule_base"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:text="@string/clear_shedule_base"
+                android:textColor="@color/whiteno"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/b_update_entities" />
+
+            <ImageButton
+                android:id="@+id/b_clear_shedule_base"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                app:layout_constraintBottom_toBottomOf="@+id/tv_del_shedule_base"
+                app:layout_constraintStart_toEndOf="@+id/tv_del_shedule_base"
+                app:layout_constraintTop_toTopOf="@+id/tv_del_shedule_base"
+                app:srcCompat="@drawable/baseline_delete_24"
+                app:tint="@color/delete" />
+
+
+            <TextView
+                android:id="@+id/tv_del_history_base"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:text="@string/clear_history_base"
+                android:textColor="@color/whiteno"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/b_clear_shedule_base" />
+
+            <ImageButton
+                android:id="@+id/b_clear_history_base"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                app:layout_constraintBottom_toBottomOf="@+id/tv_del_history_base"
+                app:layout_constraintStart_toEndOf="@+id/tv_del_history_base"
+                app:layout_constraintTop_toTopOf="@+id/tv_del_history_base"
+                app:srcCompat="@drawable/baseline_delete_24"
+                app:tint="@color/delete" />
+
+            <TextView
+                android:id="@+id/tv_del_lessons_base"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:text="@string/clear_lessons_base"
+                android:textColor="@color/whiteno"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/b_clear_history_base" />
+
+            <ImageButton
+                android:id="@+id/b_clear_lessons_base"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                app:layout_constraintBottom_toBottomOf="@+id/tv_del_lessons_base"
+                app:layout_constraintStart_toEndOf="@+id/tv_del_lessons_base"
+                app:layout_constraintTop_toTopOf="@+id/tv_del_lessons_base"
+                app:srcCompat="@drawable/baseline_delete_24"
+                app:tint="@color/delete" />
+
+            <EditText
+                android:id="@+id/et_shedule_link"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:hint="@string/link_sheule"
+                android:textColor="@color/whiteno"
+                android:textColorHint="@color/settings"
+                android:textSize="12dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/b_clear_lessons_base">
+
+            </EditText>
+
+            <TextView
+                android:id="@+id/t_description_not"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:text="@string/messages_settings"
+                android:textColor="@color/whiteno"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/et_shedule_link">
+
+            </TextView>
+
+            <Switch
+                android:id="@+id/state"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                app:layout_constraintBottom_toBottomOf="@+id/t_description_not"
+                app:layout_constraintStart_toEndOf="@+id/t_description_not"
+                app:layout_constraintTop_toTopOf="@+id/t_description_not" />
+
+            <TextView
+                android:id="@+id/tv_notidesc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:text="@string/noti_desc"
+                android:textColor="@color/whiteno"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/t_description_not">
+
+            </TextView>
+
+            <SeekBar
+                android:id="@+id/time_changer"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:max="240"
+                android:min="0"
+                app:layout_constraintBottom_toBottomOf="@+id/tv_notidesc"
+                app:layout_constraintStart_toEndOf="@+id/tv_notidesc"
+                app:layout_constraintTop_toTopOf="@+id/tv_notidesc">
+
+            </SeekBar>
+
+            <EditText
+                android:id="@+id/et_message"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:hint="@string/message_hint"
+                android:textColor="@color/whiteno"
+                android:textColorHint="@color/settings"
+                app:layout_constraintStart_toStartOf="@+id/tv_notidesc"
+                app:layout_constraintTop_toBottomOf="@+id/tv_notidesc">
+
+            </EditText>
+
+            <TextView
+                android:id="@+id/tv_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:textColor="@color/whiteno"
+                android:text="00:00"
+                app:layout_constraintEnd_toEndOf="@+id/time_changer"
+                app:layout_constraintTop_toBottomOf="@+id/time_changer" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

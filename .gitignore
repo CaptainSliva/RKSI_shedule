@@ -1,0 +1,12 @@
+*.iml
+.gradle
+.idea
+.kotlin
+gradle
+build.gradle.kts
+git status
+gradle.properties
+gradlew
+gradlew.bat
+local.properties
+settings.gradle.kts

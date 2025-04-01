@@ -1,0 +1,149 @@
+<resources>
+    <string name="app_name">RKSI shedule</string>
+    <string name="planshet">Планшетка</string>
+    <string name="lessons">Пара</string>
+    <string name="audiences">Аудитория</string>
+    <string name="number_of_lesson">Номер пары</string>
+    <string name="edit">Применить изменения</string>
+    <string name="edit_is_accepted">Изменения приняты</string>
+    <string name="turtle_hint">Вставьте сюда изменение расписания которое прислала черепаха</string>
+    <string name="clear_shedule_base">Удалить изменения расписаний</string>
+    <string name="clear_lessons_base">Удалить названия пар</string>
+    <string name="clear_history_base">Удалить историю расписания</string>
+    <string name="update_entties_base">Обновить списки групп и преподавателей</string>
+    <string name="link_sheule">Вставьте сюда ссылку на папку с планшеткой</string>
+    <string name="shedule_group">Расписание группы</string>
+    <string name="shedule_teacher">Расписание преподавателя</string>
+    <string name="dont_find">не найдено</string>
+    <string name="choose_default_shedule_1">Выберите в настройках расписание по умолчанию</string>
+    <string name="choose_default_shedule_2">из списка групп или преподавателей</string>
+    <string name="message_hint">Текст сообщения</string>
+    <string name="noti_desc">Время до пары</string>
+    <string name="messages_settings">Уведомление перед первой парой</string>
+
+    <string name="different_shedules">Расписания</string>
+    <string name="settings">Настройки</string>
+    <string name="history">История</string>
+    <string name="turtle">Черепаха</string>
+    <string name="delete_card">Удалить</string>
+    <string name="edit_card">Редактировать</string>
+    <string name="lessons_base_is_empty">Нет возможных названий пар, нажмите кнопку обновления данных на главной странице</string>
+
+    <string name="no_lesson">Пара дома</string>
+    <string name="dont_find_lesson">Пара не найдена</string>
+    <string name="load_file_error">Ошибка загрузки файла</string>
+    <string name="update_table_error">Ошибка обновления таблицы</string>
+    <string name="wrong_link">Добавьте ссылку на папку с планшеткой в настройки</string>
+
+    <string name="lesson">пара</string>
+    <string name="audience">аудитория</string>
+    <string name="prep">преподаватель</string>
+    <string name="group">группа</string>
+    <string name="grouprep">Группа / Преподаватель</string>
+
+    <string name="emergance_mode">Аварийный режим</string>
+    <string name="emergance_description">Не удалось найти пары с такими временными интервалами, расписание будет показано с сайта без изменений</string>
+
+    <string name="shedules_text">Расписания звонков</string>
+    <string name="initial_entity">Расписание по умолчанию</string>
+    <string name="short_text">сокращённое</string>
+    <string name="uncommon1_short_text">сокращённое с 3 пары</string>
+    <string name="uncommon2_short_text">сокращённое с 4 пары</string>
+    <string name="common_text">обычное</string>
+    <string name="monday_text">с учётом классных часов</string>
+    <string name="common_shedule">
+        \n1 пара | 08:00 — 09:30
+        \n2 пара | 09:40 — 11:10
+        \n3 пара | 11:30 — 13:00
+        \n4 пара | 13:10 — 14:40
+        \n5 пара | 15:00 — 16:30
+        \n6 пара | 16:40 — 18:10
+        \n7 пара | 18:20 — 19:50
+    </string>
+    <string name="monday_shedule_1">
+            \n1 пара | 08:00 — 09:30
+            \n2 пара | 09:40 — 11:10
+            \n3 пара | 11:30 — 13:00
+        \nКлассный час | 13:05 — 14:05
+            \n4 пара | 14:10 — 15:40
+            \n5 пара | 16:00 — 17:30
+            \n6 пара | 17:40 — 19:10
+    </string>
+    <string name="short_shedule">
+        \n1 пара | 08:00 — 08:50
+        \n2 пара | 09:00 — 09:50
+        \n3 пара | 10:00 — 10:50
+        \n4 пара | 11:00 — 11:50
+        \n5 пара | 12:00 — 12:50
+        \n6 пара | 13:00 — 13:50
+        \n7 пара | 14:00 — 14:50
+    </string>
+    <string name="uncommon1_short_shedule">
+        \n1 пара | 08:00 — 09:30
+        \n2 пара | 09:40 — 11:10
+        \n3 пара | 11:30 — 12:20
+        \n4 пара | 12:30 — 13:20
+        \n5 пара | 13:30 — 14:20
+        \n6 пара | 14:30 — 15:20
+        \n7 пара | 15:30 — 16:30
+    </string>
+    <string name="uncommon2_short_shedule">
+        \n1 пара | 08:00 — 09:30
+        \n2 пара | 09:40 — 11:10
+        \n3 пара | 11:30 — 13:00
+        \n4 пара | 13.10 — 14.00
+        \n5 пара | 14.10 — 15.00
+        \n6 пара | 15.10 — 16.00
+        \n7 пара | 16.10 — 17.00
+    </string>
+
+    <string name="code_one_el">one</string>
+    <string name="code_three_el">three</string>
+    <string name="code_easy_el">easy</string>
+    <string name="title_activity_history_shedule">HistoryShedule</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="lorem_ipsum">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam in scelerisque sem. Mauris
+        volutpat, dolor id interdum ullamcorper, risus dolor egestas lectus, sit amet mattis purus
+        dui nec risus. Maecenas non sodales nisi, vel dictum dolor. Class aptent taciti sociosqu ad
+        litora torquent per conubia nostra, per inceptos himenaeos. Suspendisse blandit eleifend
+        diam, vel rutrum tellus vulputate quis. Aliquam eget libero aliquet, imperdiet nisl a,
+        ornare ex. Sed rhoncus est ut libero porta lobortis. Fusce in dictum tellus.\n\n
+        Suspendisse interdum ornare ante. Aliquam nec cursus lorem. Morbi id magna felis. Vivamus
+        egestas, est a condimentum egestas, turpis nisl iaculis ipsum, in dictum tellus dolor sed
+        neque. Morbi tellus erat, dapibus ut sem a, iaculis tincidunt dui. Interdum et malesuada
+        fames ac ante ipsum primis in faucibus. Curabitur et eros porttitor, ultricies urna vitae,
+        molestie nibh. Phasellus at commodo eros, non aliquet metus. Sed maximus nisl nec dolor
+        bibendum, vel congue leo egestas.\n\n
+        Sed interdum tortor nibh, in sagittis risus mollis quis. Curabitur mi odio, condimentum sit
+        amet auctor at, mollis non turpis. Nullam pretium libero vestibulum, finibus orci vel,
+        molestie quam. Fusce blandit tincidunt nulla, quis sollicitudin libero facilisis et. Integer
+        interdum nunc ligula, et fermentum metus hendrerit id. Vestibulum lectus felis, dictum at
+        lacinia sit amet, tristique id quam. Cras eu consequat dui. Suspendisse sodales nunc ligula,
+        in lobortis sem porta sed. Integer id ultrices magna, in luctus elit. Sed a pellentesque
+        est.\n\n
+        Aenean nunc velit, lacinia sed dolor sed, ultrices viverra nulla. Etiam a venenatis nibh.
+        Morbi laoreet, tortor sed facilisis varius, nibh orci rhoncus nulla, id elementum leo dui
+        non lorem. Nam mollis ipsum quis auctor varius. Quisque elementum eu libero sed commodo. In
+        eros nisl, imperdiet vel imperdiet et, scelerisque a mauris. Pellentesque varius ex nunc,
+        quis imperdiet eros placerat ac. Duis finibus orci et est auctor tincidunt. Sed non viverra
+        ipsum. Nunc quis augue egestas, cursus lorem at, molestie sem. Morbi a consectetur ipsum, a
+        placerat diam. Etiam vulputate dignissim convallis. Integer faucibus mauris sit amet finibus
+        convallis.\n\n
+        Phasellus in aliquet mi. Pellentesque habitant morbi tristique senectus et netus et
+        malesuada fames ac turpis egestas. In volutpat arcu ut felis sagittis, in finibus massa
+        gravida. Pellentesque id tellus orci. Integer dictum, lorem sed efficitur ullamcorper,
+        libero justo consectetur ipsum, in mollis nisl ex sed nisl. Donec maximus ullamcorper
+        sodales. Praesent bibendum rhoncus tellus nec feugiat. In a ornare nulla. Donec rhoncus
+        libero vel nunc consequat, quis tincidunt nisl eleifend. Cras bibendum enim a justo luctus
+        vestibulum. Fusce dictum libero quis erat maximus, vitae volutpat diam dignissim.
+    </string>
+
+</resources>

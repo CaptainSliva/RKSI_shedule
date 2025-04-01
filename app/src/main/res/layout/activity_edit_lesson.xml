@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/edit_lesson"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".activities.EditLesson">
+
+
+    <View
+        android:id="@+id/v_head"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/head"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/b_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:background="@null"
+        android:src="@drawable/baseline_arrow_back_48"
+        app:layout_constraintBottom_toBottomOf="@+id/v_head"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <com.example.rksishedule.utils.MySpinner
+        android:id="@+id/s_lessonNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/whiteno"
+        android:popupBackground="@color/transparent_white_85"
+        android:textColor="@color/whiteno"
+        app:layout_constraintBottom_toBottomOf="@+id/v_head"
+        app:layout_constraintEnd_toEndOf="@+id/v_head"
+        app:layout_constraintStart_toStartOf="@+id/v_head"
+        app:layout_constraintTop_toTopOf="@+id/v_head">
+    </com.example.rksishedule.utils.MySpinner>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginHorizontal="12dp"
+        android:layout_marginTop="50dp"
+        android:ellipsize="end"
+        android:maxLines="4"
+        app:layout_constraintTop_toBottomOf="@+id/v_head"
+        tools:layout_editor_absoluteX="4dp">
+
+
+        <TextView
+            android:id="@+id/lesson"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/lessons"
+            android:textColor="@color/whiteno"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.example.rksishedule.utils.MySpinner
+            android:id="@+id/s_lessons"
+            android:layout_width="311dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="24dp"
+            android:backgroundTint="@color/whiteno"
+            android:popupBackground="@color/transparent_white_85"
+            android:textColor="@color/whiteno"
+            android:gravity="top"
+            app:layout_constraintStart_toEndOf="@+id/lesson"
+            app:layout_constraintTop_toTopOf="@+id/lesson">
+
+        </com.example.rksishedule.utils.MySpinner>
+
+        <com.example.rksishedule.utils.MySpinner
+            android:id="@+id/s_entity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:backgroundTint="@color/whiteno"
+            android:popupBackground="@color/transparent_white_85"
+            android:textColor="@color/whiteno"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/s_lessons">
+
+        </com.example.rksishedule.utils.MySpinner>
+
+        <TextView
+            android:id="@+id/aud"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28dp"
+            android:text="@string/audiences"
+            android:textColor="@color/whiteno"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/s_entity" />
+
+        <TextView
+            android:id="@+id/tv_aud"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:textColor="@color/whiteno"
+            app:layout_constraintStart_toEndOf="@+id/aud"
+            app:layout_constraintTop_toTopOf="@+id/aud">
+
+        </TextView>
+
+        <com.example.rksishedule.utils.MySpinner
+            android:id="@+id/s_fourth_floor_auds"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="8dp"
+            android:backgroundTint="@color/whiteno"
+            android:dropDownWidth="120dp"
+            android:popupBackground="@color/transparent_white_85"
+            android:textColor="@color/whiteno"
+            app:layout_constraintStart_toEndOf="@+id/aud"
+            app:layout_constraintTop_toBottomOf="@+id/aud">
+
+        </com.example.rksishedule.utils.MySpinner>
+
+        <com.example.rksishedule.utils.MySpinner
+            android:id="@+id/s_third_floor_auds"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="8dp"
+            android:backgroundTint="@color/whiteno"
+            android:dropDownWidth="120dp"
+            android:popupBackground="@color/transparent_white_85"
+            android:textColor="@color/whiteno"
+            app:layout_constraintStart_toEndOf="@+id/aud"
+            app:layout_constraintTop_toBottomOf="@+id/s_fourth_floor_auds">
+
+        </com.example.rksishedule.utils.MySpinner>
+
+        <com.example.rksishedule.utils.MySpinner
+            android:id="@+id/s_first_floor_auds"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="8dp"
+            android:backgroundTint="@color/whiteno"
+            android:dropDownWidth="120dp"
+            android:popupBackground="@color/transparent_white_85"
+            android:textColor="@color/whiteno"
+            app:layout_constraintStart_toEndOf="@+id/aud"
+            app:layout_constraintTop_toBottomOf="@+id/s_second_floor_auds">
+
+        </com.example.rksishedule.utils.MySpinner>
+
+        <com.example.rksishedule.utils.MySpinner
+            android:id="@+id/s_second_floor_auds"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="8dp"
+            android:backgroundTint="@color/whiteno"
+            android:dropDownWidth="120dp"
+            android:popupBackground="@color/transparent_white_85"
+            android:textColor="@color/whiteno"
+            app:layout_constraintStart_toEndOf="@+id/aud"
+            app:layout_constraintTop_toBottomOf="@+id/s_third_floor_auds">
+
+        </com.example.rksishedule.utils.MySpinner>
+
+        <com.example.rksishedule.utils.MySpinner
+            android:id="@+id/s_other_auds"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="8dp"
+            android:backgroundTint="@color/whiteno"
+            android:dropDownWidth="120dp"
+            android:popupBackground="@color/transparent_white_85"
+            android:textColor="@color/whiteno"
+            app:layout_constraintStart_toEndOf="@+id/aud"
+            app:layout_constraintTop_toBottomOf="@+id/s_first_floor_auds">
+
+        </com.example.rksishedule.utils.MySpinner>
+
+        <TextView
+            android:id="@+id/tv_lessons_is_empty"
+            android:layout_width="300dp"
+            android:layout_height="52dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="8dp"
+            android:gravity="top"
+            android:text="@string/lessons_base_is_empty"
+            android:textColor="@color/whiteno"
+            android:visibility="invisible"
+            app:layout_constraintStart_toEndOf="@+id/lesson"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="other_auds">
+        <item>с/з1</item>
+        <item>с/з2</item>
+        <item>с/з3</item>
+        <item>с/з4</item>
+        <item>с/з5</item>
+        <item>с/з6</item>
+        <item>с/з7</item>
+        <item>с/з8</item>
+        <item>с/з9</item>
+        <item>Общ1-3</item>
+        <item>Общ1-1</item>
+        <item>Общ1</item>
+        <item>Общ1-2</item>
+        <item>5</item>
+        <item>6</item>
+        <item>Библиотека</item>
+        <item>Актовый зал</item>
+        <item>Дома</item>
+    </string-array>
+</resources>

@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".activities.MainActivity">
+
+    <View
+        android:id="@+id/v_head"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/head"
+        app:layout_constraintBottom_toTopOf="@+id/rv_shedule"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:id="@+id/tv_what_is_parse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textColor="@color/whiteno"
+        app:layout_constraintBottom_toBottomOf="@+id/v_head"
+        android:textSize="23sp"
+        android:textFontWeight="500"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_type_of_week"
+        android:layout_marginHorizontal="12dp"
+        android:layout_width="60dp"
+        android:layout_height="35dp"
+        android:textColor="@color/whiteno"
+        app:layout_constraintBottom_toBottomOf="@+id/v_head"
+        app:layout_constraintStart_toStartOf="@+id/v_head"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </TextView>
+
+    <com.example.rksishedule.utils.MySpinner
+        android:id="@+id/spin_teachers"
+        android:layout_marginHorizontal="12dp"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:backgroundTint="@color/whiteno"
+        android:dropDownWidth="175dp"
+        android:popupBackground="@color/transparent_white_85"
+        android:textColor="@color/whiteno"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spin_groups">
+
+    </com.example.rksishedule.utils.MySpinner>
+
+    <com.example.rksishedule.utils.MySpinner
+        android:id="@+id/spin_groups"
+        android:layout_marginHorizontal="12dp"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:backgroundTint="@color/whiteno"
+        android:popupBackground="@color/transparent_white_85"
+        android:textColor="@color/whiteno"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rv_shedule">
+
+    </com.example.rksishedule.utils.MySpinner>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_shedule"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="65dp"
+        android:backgroundTint="@null"
+        app:layout_constraintBottom_toTopOf="@+id/spin_teachers"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_what_is_parse"
+        app:layout_constraintVertical_bias="0.561" />
+
+    <ImageView
+        android:id="@+id/menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="12dp"
+        app:layout_constraintBottom_toBottomOf="@+id/v_head"
+        app:layout_constraintEnd_toEndOf="@+id/v_head"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/baseline_menu_48"
+        app:tint="@color/white" />
+
+    <ImageView
+        android:id="@+id/refresh_page"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:src="@drawable/baseline_refresh_48"
+        app:layout_constraintEnd_toStartOf="@+id/iv_one_el"
+        app:layout_constraintHorizontal_bias="0.85"
+        app:layout_constraintStart_toEndOf="@+id/spin_teachers"
+        app:layout_constraintTop_toBottomOf="@+id/rv_shedule"
+        app:tint="@color/edit">
+
+    </ImageView>
+
+    <ImageView
+        android:id="@+id/iv_one_el"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="8dp"
+        android:src="@drawable/view_one"
+        android:background="@drawable/unactive"
+        app:layout_constraintEnd_toStartOf="@+id/iv_three_el"
+        app:layout_constraintTop_toBottomOf="@+id/rv_shedule" />
+
+    <ImageView
+        android:id="@+id/iv_three_el"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="8dp"
+        android:src="@drawable/view_three"
+        android:background="@drawable/unactive"
+        app:layout_constraintEnd_toStartOf="@+id/iv_easy_view"
+        app:layout_constraintTop_toBottomOf="@+id/rv_shedule" />
+
+    <ImageView
+        android:id="@+id/iv_easy_view"
+        android:layout_marginHorizontal="12dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:src="@drawable/view_easy"
+        android:background="@drawable/unactive"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rv_shedule" />
+
+    <ProgressBar
+        android:id="@+id/i_loading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/rv_shedule"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/rv_shedule"
+        app:layout_constraintTop_toBottomOf="@+id/v_head"
+        android:indeterminateDrawable="@drawable/loading_ring"
+        android:visibility="visible"
+        />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

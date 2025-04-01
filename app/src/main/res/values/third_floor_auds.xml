@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="third_floor_auds">
+        <item>303</item>
+        <item>305</item>
+        <item>306</item>
+        <item>307</item>
+        <item>310</item>
+        <item>312</item>
+        <item>314</item>
+        <item>315а</item>
+        <item>316</item>
+        <item>318</item>
+        <item>320</item>
+        <item>322</item>
+        <item>323</item>
+        <item>324</item>
+        <item>325</item>
+        <item>326</item>
+    </string-array>
+</resources>

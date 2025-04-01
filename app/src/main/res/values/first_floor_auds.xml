@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="first_floor_auds">
+        <item>103</item>
+        <item>104</item>
+        <item>106</item>
+        <item>109</item>
+        <item>110</item>
+        <item>110а</item>
+        <item>111</item>
+        <item>114</item>
+        <item>114а</item>
+        <item>118</item>
+        <item>121</item>
+        <item>122</item>
+    </string-array>
+</resources>

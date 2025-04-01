@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="fourth_floor_auds">
+        <item>401</item>
+        <item>404</item>
+        <item>406</item>
+        <item>406</item>
+        <item>408</item>
+        <item>410</item>
+        <item>411</item>
+        <item>412</item>
+        <item>414</item>
+        <item>415</item>
+        <item>416</item>
+        <item>418</item>
+        <item>420</item>
+        <item>420</item>
+        <item>422</item>
+    </string-array>
+</resources>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="whiteno">#F5E7FD</color>
+    <color name="transparent_white_85">#D9FFFEFD</color>
+    <color name="transparent_edit_white_85">#D9FFDDBB</color>
+    <color name="transparent_black_85">#D9000000</color>
+    <color name="background">#141118</color>
+    <color name="card_background">#D9FFFFFF</color>
+    <color name="planshet">#00AB47</color>
+    <color name="different_shedules">#007CB6</color>
+    <color name="settings">#878787</color>
+    <color name="history">#7000B6</color>
+    <color name="delete">#B60000</color>
+    <color name="edit">#006DB6</color>
+    <color name="head">#4B29A3</color>
+    <color name="emergance">#4AA32929</color>
+    <color name="active">#CC00AEFF</color>
+    <color name="unactive">#4D00AEFF</color>
+    <color name="full_transparent">#03000000</color>
+    <color name="full_text_transparent">#0DFFFFFF</color>
+    <color name="edit_lesson">#D9FFFED5</color>
+    <color name="delete_lesson">#D9FFD5D5</color>
+    <color name="light_blue_600">#FF039BE5</color>
+    <color name="light_blue_900">#FF01579B</color>
+    <color name="light_blue_A200">#FF40C4FF</color>
+    <color name="light_blue_A400">#FF00B0FF</color>
+    <color name="black_overlay">#66000000</color>
+    
+</resources>
